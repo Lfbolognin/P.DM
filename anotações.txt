@@ -1,0 +1,14 @@
+            Comandos
+
+flutter create (nome do app) - cria o arquivo base do flutter
+
+
+
+Comandos programação
+
+      STL - cria um wid
+
+
+
+      
+
