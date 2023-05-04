@@ -1,32 +1,23 @@
+import 'dart:async';
+
+
 import 'package:flutter/material.dart';
+import 'package:meuapp_luiz/pagina_inicial.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MeuApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MeuApp extends StatelessWidget {
+  const MeuApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return MaterialApp(
-    home: PaginaInicial()
-    
-    );
+      debugShowCheckedModeBanner: false,
+      home: PaginaInicial()
+      );
   }
 }
 
-class PaginaInicial extends StatelessWidget {
-  const PaginaInicial({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent,
-        title: Text("Olá Meu App "),
-      ),
-      body: Container(),
-    );
-  }
-}
