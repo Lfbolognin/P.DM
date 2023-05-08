@@ -1,8 +1,7 @@
 import 'dart:async';
 
-
 import 'package:flutter/material.dart';
-import 'package:meuapp_luiz/pagina_inicial.dart';
+import './pagina_inicial.dart';
 
 void main() {
   runApp(const MeuApp());
@@ -15,9 +14,7 @@ class MeuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: PaginaInicial()
-      );
+        debugShowCheckedModeBanner: false, home: PaginaInicial()
+    );
   }
 }
-
