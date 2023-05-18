@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class Status extends StatelessWidget {
@@ -8,19 +10,41 @@ class Status extends StatelessWidget {
     return ListView(
       children: [
         ListTile(
-          // ignore: prefer_const_constructors
           title: Text("Meu status"),
           leading: Icon(Icons.account_circle, size: 48),
           trailing: Icon(
             Icons.add,
           ),
+          onTap: () {},
         ),
         ListTile(
-          title: Text("Outros Status"),
-          Color: Color.fromARGB(255, 44, 84, 9),
+          title: Text("Atualizações recentes"),
+          
         ),
         ListTile(
-          // ignore: prefer_const_constructors
+          title: Row(
+            children: [
+                        Text("Whatsapp", 
+          style: TextStyle(
+            color: Color.fromARGB(255, 72, 105, 72),
+          
+            fontWeight: FontWeight.bold,         
+            ),
+          ),
+          SizedBox(width: 10,),
+          Icon(Icons.verified, color: Color.fromARGB(255, 172, 172, 172), size: 24,),
+          
+          
+            ],
+          )
+          
+,
+          leading: CircleAvatar(
+            backgroundImage: NetworkImage(
+                "https://cdn.dfg.com.br/itemimages/975740159-bot-para-vender-sozinho-no-wha-t-s-app-15-mil-grupos-9C2J.webp"),
+          ),
+        ),
+        ListTile(
           title: Text("Fulano"),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(
@@ -29,7 +53,6 @@ class Status extends StatelessWidget {
           trailing: Text("Hoje 13:49"),
         ),
         ListTile(
-          // ignore: prefer_const_constructors
           title: Text("Amor"),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(

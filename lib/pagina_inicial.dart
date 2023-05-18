@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import './chamadas.dart';
 import './status.dart';
@@ -12,9 +13,9 @@ class PaginaInicial extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          // ignore: prefer_const_constructors
-          backgroundColor: Color.fromARGB(255, 44, 84, 9),
-          // ignore: prefer_const_constructors
+  
+          backgroundColor: Color.fromARGB(255, 56, 127, 107),
+
           title: Text("WhatsApp"),
           bottom: TabBar(
             tabs: [
