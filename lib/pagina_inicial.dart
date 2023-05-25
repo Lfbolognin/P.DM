@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:meuapp_luiz/configuracoes.dart';
 import './chamadas.dart';
 import './status.dart';
 import './conversas.dart';
@@ -22,12 +23,15 @@ class PaginaInicial extends StatelessWidget {
               Tab(text: "Conversas"),
               Tab(text: "Status"),
               Tab(text: "Chamadas"),
+              
             ],
           ),
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+            IconButton(onPressed: () {
+              Navigator.pushNamed(context, '/config');
+            }, icon: Icon(Icons.more_vert))
           ],
         ),
         body: TabBarView(

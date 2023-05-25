@@ -54,7 +54,7 @@ ListTile(
             backgroundImage: NetworkImage(
                 'https://images.unsplash.com/photo-1682232410297-e04c5e616b31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
           ),
-          trailing: Icon(Icons.videocam, size: 260, color: Color.fromARGB(255, 56, 127, 107),),
+          trailing: Icon(Icons.videocam, size: 20, color: Color.fromARGB(255, 56, 127, 107),),
           
         ),
         ListTile(

@@ -30,9 +30,10 @@ class Status extends StatelessWidget {
           
             fontWeight: FontWeight.bold,         
             ),
+            
           ),
           SizedBox(width: 10,),
-          Icon(Icons.verified, color: Color.fromARGB(255, 172, 172, 172), size: 24,),
+          Icon(Icons.verified, color: Color.fromARGB(255, 73, 181, 73), size: 24,),
           
           
             ],
@@ -43,6 +44,7 @@ class Status extends StatelessWidget {
             backgroundImage: NetworkImage(
                 "https://cdn.dfg.com.br/itemimages/975740159-bot-para-vender-sozinho-no-wha-t-s-app-15-mil-grupos-9C2J.webp"),
           ),
+          trailing: Text("Hoje 12:42"),
         ),
         ListTile(
           title: Text("Fulano"),

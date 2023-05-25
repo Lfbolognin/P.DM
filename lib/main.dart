@@ -1,6 +1,5 @@
-// ignore_for_file: prefer_const_constructors
-import 'dart:async';
-
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+import 'configuracoes.dart';
 import 'package:flutter/material.dart';
 import './pagina_inicial.dart';
 
@@ -14,7 +13,11 @@ class MeuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: PaginaInicial()
+      routes: {
+          '/': (context) => PaginaInicial(),
+          '/config': (context) => Configuracoes (),
+      },
+        debugShowCheckedModeBanner: false, 
     );
   }
 }
